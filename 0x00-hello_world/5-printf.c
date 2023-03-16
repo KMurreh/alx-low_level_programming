@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- *main - Entry point
+ *main -Entry point
  *
- *Description: Prints a message with proper grammar followed by a newline
+ *Description:Prints a message with proper grammar followed by a newline
  *              using printf
  *
- *Return: Always 0 (Success)
+ *Return:Always 0 (Success)
  */
 int main(void)
 {
