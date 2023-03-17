@@ -7,22 +7,19 @@
  */
 int main(void)
 {
-int i, j;
+int i = 0;
 
-for (i = 0; i < 10; i++)
-{
-for (j = i + 1; j < 10; j++)
+while (i < 10)
 {
 putchar(i + '0');
-putchar(',');
-putchar(' ');
-putchar(j + '0');
-if (i == 8 && j == 9)
-continue;
+if (i < 9)
+{
 putchar(',');
 putchar(' ');
 }
+i++;
 }
+
 putchar('\n');
 return (0);
 }
