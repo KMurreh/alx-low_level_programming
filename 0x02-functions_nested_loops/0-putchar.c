@@ -1,19 +1,19 @@
 #include "main.h"
 
 /**
- *main - Entry point
- *
- *Return: Always 0 (Success)
+ * main - prints a string of characters
+ * Description: prints _putchar, followed by a new line
+ * Return: 0
  */
 int main(void)
 {
-char str[] = "_putchar\n";
-int i;
+	char a[] = "_putchar";
+	int i;
 
-for (i = 0; i < 9; i++)
-{
-write(1, &str[i], 1);
-}
-
-return (0);
+	for (i = 0; i < 8; i++)
+	{
+		_putchar(a[i]);
+	}
+	_putchar('\n');
+	return (0);
 }
