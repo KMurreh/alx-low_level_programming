@@ -1,13 +1,11 @@
 #include <stdio.h>
 
-
 /**
- * print_before_main - Prints a message before the main function is executed
- *
- * Return: void
+ * b - prints from init by the loader before main
  */
-void print_before_main(void)
+void b(void) __attribute__ ((constructor));
+void b(void)
 {
-    printf("You're beat! and yet, you must allow,\n"
-           "I bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
